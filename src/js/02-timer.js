@@ -69,6 +69,7 @@ const onStartBtn = () => {
       btn.disabled = true;
     } else {
       btn.disabled = false;
+      Notiflix.Notify.success('Time is up');
       clearInterval(timerId);
     }
   }, 1000);
