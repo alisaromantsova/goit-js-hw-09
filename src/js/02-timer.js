@@ -21,7 +21,7 @@ const options = {
     chosenDate = selectedDates[0].getTime();
     const dateNow = new Date().getTime();
     if (chosenDate < dateNow) {
-      Notiflix.Notify.failure('"Please choose a date in the future"');
+      Notiflix.Notify.failure('Please choose a date in the future');
     } else {
       time = chosenDate - dateNow;
       convertMs(time);
